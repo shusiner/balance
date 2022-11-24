@@ -13,5 +13,14 @@ const config = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  async redirects() {
+    return [
+      {
+        source: "/sameFolderFile",
+        destination: "/sameFolderFile/test1",
+        permanent: true,
+      },
+    ];
+  },
 };
 export default config;
